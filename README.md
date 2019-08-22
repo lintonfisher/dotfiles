@@ -2,7 +2,7 @@
 
 ## Info
 
-These files are general configuration files used by the terminal emulator and other applications. I have modified them to suit my preferences by including useful aliases (shortened commands) and functions.
+This repo contains my modified configuration files for bash and some other applications. I have modified them to suit my preferences by including useful aliases (shortened commands) and functions. Feel free to chop and change to suit you!
 
 ## Getting Started
 
