@@ -9,9 +9,8 @@ This repo contains my modified configuration files for bash and some other appli
 ### Using Install Script
 
 ```bash
-$ git clone git@github.com:lintonfisher/dotfiles.git ~/.dotfiles
+$ git clone https://github.com/lintonfisher/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles/scripts
-$ chmod 700 install.sh
 $ ./install.sh
 ```
 
@@ -21,8 +20,7 @@ The install script backs all of the original files up by appending `.old` to the
 
 ```bash
 $ cd ~/.dotfiles/scripts
-$ chmod 700 restore_backup.sh
-$ ./restore_backup,sh
+$ ./restore_backup.sh
 ```
 
 >__Note:__ You probably shouldn't run the `restore_backup.sh` script if you haven't already run the `install.sh` script.
@@ -34,7 +32,7 @@ Manuall install is good if you don't want to use all of the files in this repo.
 Basically clone the repo somewhere then move the files you want to use to your home (`$HOME`/`~`) directory:
 
 ```bash
-$ git clone git@github.com:lintonfisher/dotfiles.git /tmp/dotfiles
+$ git clone https://github.com/lintonfisher/dotfiles.git /tmp/dotfiles
 $ cp /tmp/dotfiles/* ~
 ```
 
