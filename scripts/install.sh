@@ -1,5 +1,11 @@
 # Vars
-dotfile_dir=$HOME/dot-files
+dotfile_dir=$HOME/.dotfiles
+
+if [ ! -d $dotfile_dir ]; then
+	echo $dotfile_dir does not exist!
+	echo Did you clone the repo to ~/.dotfiles ?
+	exit 1
+fi
 
 # Backup existing dotfiles
 if [ -f $HOME/.bashrc ]; then
