@@ -10,7 +10,7 @@ This repo contains my modified configuration files for bash and some other appli
 
 ```bash
 $ git clone git@github.com:lintonfisher/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles
+$ cd ~/.dotfiles/scripts
 $ chmod 700 install.sh
 $ ./install.sh
 ```
@@ -20,7 +20,7 @@ $ ./install.sh
 The install script backs all of the original files up by appending `.old` to the filename. To restore the backups, run the `restore_backup.sh` script, which will remove the symbolic links to `~/.dotfiles` and restore the `.old` files.
 
 ```bash
-$ cd ~/.dotfiles
+$ cd ~/.dotfiles/scripts
 $ chmod 700 restore_backup.sh
 $ ./restore_backup,sh
 ```
