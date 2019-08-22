@@ -17,7 +17,9 @@ $ ./install.sh
 
 >__Note:__ Make sure to clone the file to `~/.dotfiles` or move it after you've cloned it.
 
-The install script backs all of the original files up. To restore the backups, run the `restore_backup.sh` script.
+The install script backs all of the original files up by appending `.old` to the filename. To restore the backups, run the `restore_backup.sh` script, which will remove the symbolic links to `~/.dotfiles` and restore the `.old` files.
+
+>__Note:__ You probably shouldn't run the `restore_backup.sh` script if you haven't already run the `install.sh` script.
 
 ```bash
 $ cd ~/.dotfiles
