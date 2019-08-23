@@ -1,19 +1,31 @@
+#!/bin/bash
+
+# Vars
+backup_dir=$HOME/.dotfiles/backup
+
+if [ ! -d $backup_dir ]
+then
+	echo Backup directory doesn\'t exist!
+	echo Are you sure you ran the ./install.sh script already? 
+	exit 1
+fi
+
 # Restore backups
-if [ -f $HOME/.bashrc.old ]; then
+if [ -f $backup_dir/.bashrc_backup ]; then
 	rm $HOME/.bashrc
-	mv $HOME/.bashrc.old $HOME/.bashrc
+	mv $backup_dir/.bashrc_backup $HOME/.bashrc
 fi
-if [ -f $HOME/.bash_aliases.old ]; then
+if [ -f $backup_dir/.bash_aliases_backup ]; then
 	rm $HOME/.bash_aliases
-	mv $HOME/.bash_aliases.old $HOME/.bash_aliases
+	mv $backup_dir/.bash_aliases_backup $HOME/.bash_aliases
 fi
-if [ -f $HOME/.dircolors.old ]; then
+if [ -f $backup_dir/.dircolors_backup ]; then
 	rm $HOME/.dircolors
-	mv $HOME/.dircolors.old $HOME/.dircolors
+	mv $backup_dir/.dircolors_backup $HOME/.dircolors
 fi
-if [ -f $HOME/.inputrc.old ]; then
+if [ -f $backup_dir/.inputrc_backup ]; then
 	rm $HOME/.inputrc
-	mv $HOME/.inputrc.old $HOME/.inputrc
+	mv $backup_dir/.inputrc_backup $HOME/.inputrc
 fi
 
 echo Done!
