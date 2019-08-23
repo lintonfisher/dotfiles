@@ -37,3 +37,11 @@ $ cp /tmp/dotfiles/* ~
 ```
 
 >__Note:__ Manual install _will not_ backup your original files.
+
+## Contributing
+
+Suggestions are welcome! If you have any ideas on how to improve the install/restore scripts, or have any useful aliases, please feel free to open a pull-request.
+
+## Issues
+
+If you have any issues with the install/restore process, please feel free to open an issue and I'll do my best to sort it out.
