@@ -28,6 +28,9 @@ alias grep='grep --color'
 # Clear terminal faster
 alias clear='tput clear'
 
+# Retry last command with sudo
+alias please='sudo !!'
+
 # Config editing
 alias bashrc='vim $HOME/.bashrc && source $HOME/.bashrc'
 alias bashalias='vim $HOME/.bash_aliases && source $HOME/.bash_aliases'
@@ -43,7 +46,11 @@ alias aptup='apt upgrade'
 # Git
 alias ga='git add'
 alias gc='git commit'
+alias gd='git diff'
 alias gpu='git push'
 alias gpl='git pull'
 alias gs='git status'
 alias gl='git log'
+
+# Random
+alias cowtune='fortune | cowsay -f $(shuf -n -e ~/.cows/*)'
