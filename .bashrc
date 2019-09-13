@@ -1,5 +1,8 @@
 # .bashrc
 
+# Update the path
+export PATH=$PATH:$HOME/.local/bin
+
 # Fix the really obnoxious WSL DirColors
 eval $(dircolors $HOME/.dircolors)
 
@@ -15,3 +18,5 @@ fi
 
 # Set prompt
 export PS1='\n[\A] [\w] `nonzero_return`\n> '
+
+cd $HOME
